@@ -1,6 +1,6 @@
 # *viu*
 
-a small *less*-like Python code viewer with responsive formatting and styling
+A small *less*-like Python code viewer with responsive formatting and styling
 
 TODO - GIF
 

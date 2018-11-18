@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -27,7 +27,7 @@ setup(
     classifiers = [
         "Development Status :: 3 - Alpha",
         "Environment :: Console",
-        "Operating System :: Unix"
+        "Operating System :: Unix",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "License :: OSI Approved :: MIT License",
