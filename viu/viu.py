@@ -68,7 +68,7 @@ class Viu:
         self._format()
 
         # calculate new formatted text
-        new_text = ""
+        new_text = move_cursor(row=1, col=1)
         i = 0
         for i, line in enumerate(self._text_formatted.split("\n")[self._line_offset:]):
             if i == term_size.lines:
