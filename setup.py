@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='viu',
-    version='0.0.2',
+    version='0.0.3',
     description='A small less-like Python code viewer with responsive formatting and styling',
     long_description=long_description,
     long_description_content_type="text/markdown",
