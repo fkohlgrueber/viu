@@ -71,18 +71,18 @@ class Viu:
         new_text = move_cursor(row=1, col=1)
         i = 0
         for i, line in enumerate(self._text_formatted.split("\n")[self._line_offset:]):
-            if i == term_size.lines:
+            if i == term_size.lines - 1:
                 # end of text cannot be shown. Show colon (":") in last line
                 new_text += ":"
                 self._shown_until_end = False
                 break
             new_text += line
-            new_text += move_cursor(row=i+1, col=1)
+            new_text += move_cursor(row=i+2, col=1)
         else:
             # end of text is printed. Show "(END)" in last line and fill empty lines before with "~".
-            for n in range(i + 1, term_size.lines):
+            for n in range(i + 1, term_size.lines - 1):
                 new_text += "~"
-                new_text += move_cursor(row=n+1, col=1)
+                new_text += move_cursor(row=n+2, col=1)
             new_text += f"\033[30;47m(END)\033[49m_\033[0m" + move_cursor(row=term_size.lines, col=6)
             self._shown_until_end = True
 
