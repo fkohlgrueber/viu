@@ -2,7 +2,7 @@
 
 A small *less*-like Python code viewer with responsive formatting and styling
 
-TODO - GIF
+![Demo](res/demo.gif)
 
 ## Installation
 
